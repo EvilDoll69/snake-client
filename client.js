@@ -14,10 +14,16 @@ const connect = function () { //The conn object that Node returned to you repres
     console.log("We are connected!")
     
   });
+
+ 
  
   conn.on('data', (data) => { //receiving from the server
     console.log(data);
   });  
+
+  conn.on('connect', () => {
+    conn.write("Name: TF");
+  });
 
   return conn;
 };
