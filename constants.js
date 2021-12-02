@@ -1,6 +1,17 @@
 const IP = "165.227.47.243";
 const PORT = 50541;
-const myName = "Name: TF";
+
+const NAME = " TF";
+
+// const MESSAGE = " wow";
+
+const moves = {
+moveUp: " up",
+moveLeft: " left",
+moveDown: " down",
+moveRight: " right"
+};
+
 
 
 
@@ -8,4 +19,8 @@ const myName = "Name: TF";
 module.exports = {
   IP,
   PORT,
+  NAME,
+  moves,
+  // MESSAGE
+  
 };

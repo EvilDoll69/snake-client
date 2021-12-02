@@ -1,5 +1,7 @@
 // const {connect} = require("./client")
 
+const { moves } = require("./constants");
+
 let connection;
 
 const setupInput = function (conn) {
@@ -20,19 +22,19 @@ const handleUserInput = function (key) {
       process.exit(0);
       break;
     case "w":
-      connection.write("Move: up");
+      connection.write(`Move:${moves.moveUp}`);
       break;
     case "a":
-      connection.write("Move: left");
+      connection.write(`Move:${moves.moveLeft}`);
       break;
     case "s":
-      connection.write("Move: down");
+      connection.write(`Move:${moves.moveDown}`);
       break;
     case "d":
-      connection.write("Move: right");
+      connection.write(`Move:${moves.moveRight}`);
       break;
     case "q":
-      connection.write("Say: WOW");
+      connection.write(`Say: WOW`);
       break;
   }
 

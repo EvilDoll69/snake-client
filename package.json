@@ -1,0 +1,22 @@
+{
+  "name": "d3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "client.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EvilDoll69/snake-client.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EvilDoll69/snake-client/issues"
+  },
+  "homepage": "https://github.com/EvilDoll69/snake-client#readme",
+  "dependencies": {
+    "request": "^2.88.2"
+  }
+}

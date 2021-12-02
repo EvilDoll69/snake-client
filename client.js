@@ -1,6 +1,6 @@
 
 const net = require("net");
-const { IP, PORT } = require("./constants");
+const { IP, PORT, myName, NAME } = require("./constants");
 
 const connect = function () { //The conn object that Node returned to you represents the connection that you have with the server.
   const conn = net.createConnection({ //The conn object is full of useful methods and properties that can now be used to interact with the server!
@@ -24,7 +24,7 @@ const connect = function () { //The conn object that Node returned to you repres
 
   conn.on('connect', () => {
     console.log("Success connect to server")
-    conn.write(myName);
+    conn.write(`Name:${NAME}`);
   });
 
   return conn;
