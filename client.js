@@ -17,11 +17,12 @@ const connect = function () { //The conn object that Node returned to you repres
 
  
  
-  conn.on('data', (data) => { //receiving from the server
-    console.log(data);
-  });  
+  // conn.on('data', (data) => { //receiving from the server
+  //   console.log(data);
+  // });  
 
   conn.on('connect', () => {
+    console.log("Success connect to server")
     conn.write("Name: TF");
   });
 

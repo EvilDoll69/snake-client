@@ -1,7 +1,7 @@
 const {connect} = require("./client");
 const {setupInput} = require("./input.js");
 
-const net = require("net"); //You used Node's net library 
+// const net = require("net"); //You used Node's net library 
 //(specifically, the createConnection function) to create an object named conn in the code.
 // establishes a connection with the game server
 
@@ -10,6 +10,5 @@ const net = require("net"); //You used Node's net library
 
 
 console.log("Connecting ...");
-connect();
-
-setupInput();
+// connect();
+setupInput(connect());
